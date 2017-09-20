@@ -23,6 +23,7 @@ def main():
 
 
 def greet_user(bot, update):
+    logging.info('{} присоединился'.format(update.message.from_user.name))
     reply_text = [
         'Привет, {}! Это очень простой бот.'.format(update.message.from_user.first_name),
         '',
