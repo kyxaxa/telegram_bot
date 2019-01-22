@@ -5,7 +5,8 @@ How to create telegram bot in Python
 
 # Usefull links
 
-* [Get Token](https://www.codementor.io/garethdwyer/building-a-telegram-bot-using-python-part-1-goi5fncay)
+* [Create your bot and get Token](https://www.codementor.io/garethdwyer/building-a-telegram-bot-using-python-part-1-goi5fncay)
+
     /newbot
 
 
