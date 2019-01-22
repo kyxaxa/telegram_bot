@@ -2,7 +2,11 @@ import logging
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
-import settings
+settings = {
+    'TELEGRAM_API_KEY':'',      # setup your api key
+}
+
+from settings import *
 
 logging.basicConfig(
     format='%(asctime)s | %(levelname)s | %(message)s',
@@ -13,7 +17,7 @@ logging.basicConfig(
 
 
 def main():
-    updater = Updater(settings.TELEGRAM_API_KEY)
+    updater = Updater(settings['TELEGRAM_API_KEY'])
 
     updater.dispatcher.add_handler(CommandHandler("start", greet_user))
     updater.dispatcher.add_handler(MessageHandler(Filters.text, chat))
